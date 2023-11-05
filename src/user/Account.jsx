@@ -12,7 +12,7 @@ import { useContext } from "react";
 import { GeneralContext } from "../App";
 import Switch from "@mui/material/Switch";
 import { FormControlLabel } from "@mui/material";
-import clientStructure from './SignUp';
+import clientStructure from './ClientStructure';
 
 export default function Account({ theme }) {
   const { user, setUser, setLoader } = useContext(GeneralContext);
