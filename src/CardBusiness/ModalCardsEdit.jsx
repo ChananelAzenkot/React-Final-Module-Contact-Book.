@@ -160,10 +160,7 @@ export default function ModalCardsEdit({ editProp, theIDcard }) {
       .then(() => {
         handleClose();
         snackbar("the card is updated success !");
-      })
-      .finally(() =>
-        setTimeout(() => (window.location.href = "./my-cards"), 1000)
-      );
+      });
   };
 
   return (

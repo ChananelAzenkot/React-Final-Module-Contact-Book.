@@ -53,10 +53,7 @@ export default function MyCard({ card }) {
       .then(() => {
         setCards(cards.filter((card) => card.id !== cardId));
       })
-      .finally(() => {
-        snackbar("the card is deleted success !");
-        setTimeout(() => (window.location.href = "./my-cards"), 1000);
-      });
+      .finally(() => snackbar("the card is deleted success !"));
   }
 
   function favoriteCard(cardId) {
